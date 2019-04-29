@@ -142,7 +142,7 @@ export default class App extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     // console.log(this.state.formId);
-    Axios.get(`http://104.248.25.52:5000/family/print/${this.state.formId}`, {headers:{Authorization: "Bearer" + localStorage.getItem("jwtToken")}})
+    Axios.get(`http://dashboard.alrahma-baraka.com:5000/family/print/${this.state.formId}`, {headers:{Authorization: "Bearer" + localStorage.getItem("jwtToken")}})
     // .then(res => console.log(res.data))
       .then(res => this.setState({
         typeOfAssistanceNeeded: res.data.data[0].typeOfAssistanceNeeded,
@@ -264,7 +264,7 @@ export default class App extends Component {
         isArchived: res.data.data[0].isArchived,
       }))
       .catch(err => console.log(err));
-      Axios.get(`http://104.248.25.52:5000/visitReports/print/${this.state.formId}`, {headers:{Authorization: "Bearer" + localStorage.getItem("jwtToken")}})
+      Axios.get(`http://dashboard.alrahma-baraka.com:5000/visitReports/print/${this.state.formId}`, {headers:{Authorization: "Bearer" + localStorage.getItem("jwtToken")}})
         .then(res => this.setState({
           report:res.data.data[0].report,
         suggestions:res.data.data[0].suggestions,
