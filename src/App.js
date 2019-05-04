@@ -319,7 +319,7 @@ export default class App extends Component {
                       <td width="17%"><label style={{textAlign: 'right'}}>رقم الملف:</label>
                         <input type="number" name="familyId" value={this.state.familyId} onChange={()=>null} /></td>
                       <td width="27%"><label width="60%" style={{textAlign: 'right'}}>تاريخ دراسة الحالة:</label>
-                        <input width="40%" type="date" name="dateOfCaseStudy" value={this.state.dateOfCaseStudy} onChange={()=>null} /></td>
+                        <input width="40%" type="text" placeholder="yyyy-mm-dd" name="dateOfCaseStudy" value={this.state.dateOfCaseStudy} onChange={()=>null} /></td>
                       <td width="15%"><label style={{textAlign: 'right'}}>نوع المساعدة:</label>
                         <input list="helptype" name="helptype" value={this.state.typeOfAssistanceNeeded} onChange={()=>null} />
                       </td>	
@@ -343,7 +343,7 @@ export default class App extends Component {
                       <td colSpan={2}><label style={{textAlign: 'right'}}>مصدر الحالة:</label>
                         <input type="text" name="sourceOfCase" value={this.state.sourceOfCase} onChange={()=>null} /></td>
                       <td><label style={{textAlign: 'right'}}>تاريخ الرسالة:</label>
-                        <input type="date" name="dateOfLetter" value={this.state.dateOfLetter} onChange={()=>null} /></td> 
+                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfLetter" value={this.state.dateOfLetter} onChange={()=>null} /></td> 
                       <td><label style={{textAlign: 'right'}}>رقم الهاتف:</label>
                         <input type="text" name="phone" value={this.state.phone} onChange={()=>null} /></td>
                     </tr>
@@ -490,7 +490,7 @@ export default class App extends Component {
                       <td width="15%"><label style={{textAlign: 'right'}}>مبلغ التقاعد:</label>
                         <input type="number" name="wifeIsRetirementSalary" value={this.state.wifeIsRetirementSalary} /></td>
                       <td width="25%"><label style={{textAlign: 'right'}}>تاريخ الطلاق:</label>
-                        <input type="date" name="dateOfDivorce" value={this.state.dateOfDivorce} /></td>
+                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfDivorce" value={this.state.dateOfDivorce} /></td>
                     </tr>
                   </tbody></table>	 
                 <table style={{width: '100%'}}>
@@ -728,7 +728,7 @@ export default class App extends Component {
                       <td width="50%"><label style={{textAlign: 'right'}}>تم التحديث بواسطة:</label>
                         <input type="text" name="updatedBy" value={this.state.updatedBy} /></td>
                       <td width="30%"><label style={{textAlign: 'right'}}>تاريخ التحديث:</label>
-                        <input type="date" name="dateOfUpdate" value={this.state.dateOfUpdate} /></td>
+                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfUpdate" value={this.state.dateOfUpdate} /></td>
                     </tr><tr>
                     </tr></tbody></table>
                 <br />
@@ -748,7 +748,7 @@ export default class App extends Component {
                       <td width="20%"><label style={{textAlign: 'right'}}>رقم الهاتف:</label>
                         <input type="text" name="fieldAgentPhone" value={this.state.fieldAgentPhone} /></td>
                       <td width="30%"><label style={{textAlign: 'right'}}>تاريخ البحث:</label>
-                        <input type="date" name="dateOfReport" value={this.state.dateOfReport} /></td>		
+                        <input type="text" name="dateOfReport" value={this.state.dateOfReport} /></td>		
                     </tr></tbody></table>
                 <br />
                 <h1>توصيات اللجنة</h1>
