@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Axios from "axios";
+import ReactToPrint from 'react-to-print';
 import logo from "./logo.png";
 
-export default class App extends Component {
+class PrintPage extends Component {
   state = {
     formId:"",
     typeOfAssistanceNeeded:"",
@@ -282,6 +283,7 @@ export default class App extends Component {
   }
   render() {
     return (
+      <>
       <div dir="rtl">
               <header>
                 <figure>
@@ -779,6 +781,21 @@ export default class App extends Component {
                     </tr>
                   </tbody></table>
               </form></div>
+            </>
         );
+  }
+}
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+      <ReactToPrint
+        trigger={() => <button>طباعة الصفحة</button>}
+        content={() => this.componentRef}
+      />
+      <PrintPage ref={el => (this.componentRef = el)} />
+    </div>
+    )
   }
 }
