@@ -140,10 +140,10 @@ class PrintPage extends Component {
     this.setState({formId: e.target.value})
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(this.state.formId);
-    Axios.get(`https://dashboard.alrahma-baraka.com:5001/family/print/${this.state.formId}`, {headers:{Authorization: "Bearer" + localStorage.getItem("jwtToken")}})
+    await Axios.get(`https://dashboard.alrahma-baraka.com:5001/family/print/${this.state.formId}`, {headers:{Authorization: "Bearer" + localStorage.getItem("jwtToken")}})
     // .then(res => console.log(res.data))
       .then(res => this.setState({
         typeOfAssistanceNeeded: res.data.data[0].typeOfAssistanceNeeded,
@@ -454,28 +454,28 @@ class PrintPage extends Component {
                 <table>
                   <tbody><tr>
                       <td width="14%"><label style={{textAlign: 'right'}}>ربة منزل:</label>
-                        <input type="checkbox" name="isHouseWife" value={this.state.isHouseWife}  />
+                        <input type="checkbox" name="isHouseWife" checked={this.state.isHouseWife}  />
                         &#160;</td>
                       <td width="14%"><label style={{textAlign: 'right'}}>متقاعدة:</label>
-                        <input type="checkbox" name="wifeIsRetired" value={this.state.wifeIsRetired}  />
+                        <input type="checkbox" name="wifeIsRetired" checked={this.state.wifeIsRetired}  />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>ارملة:</label>
-                        <input type="checkbox" name="wifeIsWidow" value={this.state.wifeIsWidow}  />
+                        <input type="checkbox" name="wifeIsWidow" checked={this.state.wifeIsWidow}  />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>هجر:</label>
-                        <input type="checkbox" name="wifeIsAbandoned" value={this.state.wifeIsAbandoned} />
+                        <input type="checkbox" name="wifeIsAbandoned" checked={this.state.wifeIsAbandoned} />
                         </td>
                       <td width="9%"><label style={{textAlign: 'right'}}>عجز:</label>
-                        <input type="checkbox" name="wifeIsDisabled" value={this.state.wifeIsDisabled} />
+                        <input type="checkbox" name="wifeIsDisabled" checked={this.state.wifeIsDisabled} />
                         </td>
                       <td width="13%"><label style={{textAlign: 'right'}}>مريضة:</label>
-                        <input type="checkbox" name="wifeIsSick" value={this.state.wifeIsSick} />
+                        <input type="checkbox" name="wifeIsSick" checked={this.state.wifeIsSick} />
                         </td>
                       <td width="13%"><label style={{textAlign: 'right'}}>متوفاة:</label>
-                        <input type="checkbox" name="wifeIsDeceased" value={this.state.wifeIsDeceased} />
+                        <input type="checkbox" name="wifeIsDeceased" checked={this.state.wifeIsDeceased} />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>مطلقة:</label>
-                        <input type="checkbox" name="wifeIsDivorced" value={this.state.wifeIsDivorced} />
+                        <input type="checkbox" name="wifeIsDivorced" checked={this.state.wifeIsDivorced} />
                         </td>
                     </tr>
                   </tbody></table>	
