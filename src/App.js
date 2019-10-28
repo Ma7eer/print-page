@@ -179,7 +179,7 @@ class PrintPage extends Component {
         husbandJob: res.data.data[0].husband[0].husbandJob,
         husbandSalary: res.data.data[0].husband[0].husbandSalary,
         husbandIsRetiredFrom:res.data.data[0].husband[0].husbandIsRetiredFrom,
-        husbandIsRetirementSalary:res.data.data[0].husband[0].husbandIsRetirementSalary,
+        husbandRetirementSalary:res.data.data[0].husband[0].husbandRetirementSalary,
         husbandNumberOfWives:res.data.data[0].husband[0].husbandNumberOfWives,
         wifeName: res.data.data[0].wife[0].wifeName,
         wifeNationality: res.data.data[0].wife[0].wifeNationality,
@@ -419,7 +419,7 @@ class PrintPage extends Component {
                       <td width="25%"><label style={{textAlign: 'right'}}>الوظيفة:</label>
                         <input type="text" name="husbandJob" value={this.state.husbandJob} /></td>
                       <td width="25%"><label style={{textAlign: 'right'}}>مبلغ الراتب:</label>
-                        <input type="number" name="husbandSalary" value={this.state.husbandSalary} /></td>
+                        <input type="text" name="husbandSalary" value={this.state.husbandSalary} /></td>
                     </tr>
                   </tbody></table>
                 <table>
@@ -427,7 +427,7 @@ class PrintPage extends Component {
                       <td width="25%"><label style={{textAlign: 'right'}}>جهة التقاعد:</label>
                         <input type="text" name="husbandIsRetiredFrom" value={this.state.husbandIsRetiredFrom} /></td>
                       <td width="40%"><label style={{textAlign: 'right'}}>راتب التقاعد:</label>
-                        <input type="number" name="husbandIsRetirementSalary" value={this.state.husbandIsRetirementSalary} /></td>
+                        <input type="number" name="husbandRetirementSalary" value={this.state.husbandRetirementSalary} /></td>
                       <td width="40%"><label style={{textAlign: 'right'}}>عدد الزوجات:</label>
                         <input type="number" name="husbandNumberOfWives" value={this.state.husbandNumberOfWives} /></td>
                     </tr>
