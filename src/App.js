@@ -577,7 +577,7 @@ class PrintPage extends Component {
                       <th width="10%"><label style={{textAlign: 'right'}}>مبلغ الراتب:</label></th>
                       <th width="10%"><label style={{textAlign: 'right'}}>مبلغ التقاعد:</label></th>
                       <th width="10%"><label style={{textAlign: 'right'}}>مبلغ الضمان:</label></th>
-                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ جمعية الرحمة:</label>
+                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ النفقة:</label>
                       </th><th width="10%"><label style={{textAlign: 'right'}}>مبلغ دار العطاء:</label></th>
                       <th width="20%"><label style={{textAlign: 'right'}}>مبلغ هيئة الاعمال الخيرية:</label></th>
                       <th width="10%"><label style={{textAlign: 'right'}}>مبلغ بهوان:</label></th>
