@@ -738,7 +738,7 @@ class PrintPage extends Component {
                     </tr><tr>
                     </tr></tbody></table>
                 <br />
-                <h1>تقرير الباحث الاجتماعي عن حالة الاسرة</h1><textarea name="Social_research_details" id="text1" row={5} cols={100} wrap="hard" autoComplete="on" value={this.state.report} /><h1>اقتراحات الباحث</h1><textarea value={this.state.suggestions} id="text2" row={5} cols={100} wrap="hard" /><table style={{width: '100%'}}>
+                <h1 style={{marginTop: "100px"}}>تقرير الباحث الاجتماعي عن حالة الاسرة</h1><textarea name="Social_research_details" id="text1" row={5} cols={100} wrap="hard" autoComplete="on" value={this.state.report} /><h1>اقتراحات الباحث</h1><textarea value={this.state.suggestions} id="text2" row={5} cols={100} wrap="hard" /><table style={{width: '100%'}}>
                   <tbody><tr>
                     </tr>
                     <tr>
