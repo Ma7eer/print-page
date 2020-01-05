@@ -83,6 +83,7 @@ class PrintPage extends Component {
     darAlataaSalary:"",
     nafaqaSalary:"",
     bahwanSalary:"",
+    omanCharityOrgSalary: "",
     otherSalary:"",
     oneStoryHouse:false,
     twoStoryHouse:false,
@@ -223,6 +224,7 @@ class PrintPage extends Component {
         darAlataaSalary:res.data.data[0].income[0].darAlataaSalary,
         nafaqaSalary:res.data.data[0].income[0].nafaqaSalary,
         bahwanSalary:res.data.data[0].income[0].bahwanSalary,
+        omanCharityOrgSalary:res.data.data[0].income[0].omanCharityOrgSalary,
         otherSalary:res.data.data[0].income[0].otherSalary,
         oneStoryHouse:res.data.data[0].livingCondition[0].oneStoryHouse,
         twoStoryHouse:res.data.data[0].livingCondition[0].twoStoryHouse,
@@ -574,13 +576,14 @@ class PrintPage extends Component {
                   </tbody></table>
                 <table>
                   <tbody><tr>
-                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ الراتب:</label></th>
-                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ التقاعد:</label></th>
-                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ الضمان:</label></th>
-                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ النفقة:</label>
-                      </th><th width="10%"><label style={{textAlign: 'right'}}>مبلغ دار العطاء:</label></th>
-                      <th width="20%"><label style={{textAlign: 'right'}}>مبلغ هيئة الاعمال الخيرية:</label></th>
-                      <th width="10%"><label style={{textAlign: 'right'}}>مبلغ بهوان:</label></th>
+                      <th width="10%"><label style={{textAlign: 'right'}}> الراتب:</label></th>
+                      <th width="10%"><label style={{textAlign: 'right'}}> التقاعد:</label></th>
+                      <th width="10%"><label style={{textAlign: 'right'}}> الضمان:</label></th>
+                      <th width="10%"><label style={{textAlign: 'right'}}> النفقة:</label>
+                      </th><th width="10%"><label style={{textAlign: 'right'}}> دار العطاء:</label></th>
+                      <th width="20%"><label style={{textAlign: 'right'}}> هيئة الاعمال الخيرية:</label></th>
+                      <th width="10%"><label style={{textAlign: 'right'}}> بهوان:</label></th>
+                      <th width="10%"><label style={{textAlign: 'right'}}> الجمعية العمانية للاعمال الخيرية:</label></th>
                       <th width="10%"><label style={{textAlign: 'right'}}>مبالغ اخرى:</label></th>
                     </tr>
                     <tr>
@@ -591,6 +594,7 @@ class PrintPage extends Component {
                       <td width="10%"><input type="number" name="darAlataaSalary" value={this.state.darAlataaSalary} /></td>
                       <td width="20%"><input type="number" name="nafaqaSalary" value={this.state.nafaqaSalary} /></td>
                       <td width="10%"><input type="number" name="bahwanSalary" value={this.state.bahwanSalary} /></td>
+                      <td width="10%"><input type="number" name="omanCharityOrgSalary" value={this.state.omanCharityOrgSalary} /></td>
                       <td width="10%"><input type="number" name="otherSalary" value={this.state.otherSalary} /></td>
                     </tr>
                   </tbody></table>	
