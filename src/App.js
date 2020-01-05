@@ -293,6 +293,7 @@ class PrintPage extends Component {
                 </figure>
               </header>
               <form onSubmit={this.handleSubmit} style={{margin: "0 auto"}}>
+                <div className="container" style={{border: "2px solid rgba(34, 233, 150, 0.9)", marginBottom: "100px", padding: "5px"}}>
                 <table style={{width: '100%'}}>
                   <tbody><tr>
                       <td>
@@ -738,7 +739,10 @@ class PrintPage extends Component {
                     </tr><tr>
                     </tr></tbody></table>
                 <br />
-                <h1 style={{marginTop: "100px"}}>تقرير الباحث الاجتماعي عن حالة الاسرة</h1><textarea name="Social_research_details" id="text1" row={5} cols={100} wrap="hard" autoComplete="on" value={this.state.report} /><h1>اقتراحات الباحث</h1><textarea value={this.state.suggestions} id="text2" row={5} cols={100} wrap="hard" /><table style={{width: '100%'}}>
+                </div >
+
+                <div className="container" style={{border: "2px solid rgba(34, 233, 150, 0.9)", padding: "5px", paddingTop: "10px"}}>
+                <h1 >تقرير الباحث الاجتماعي عن حالة الاسرة</h1><textarea name="Social_research_details" id="text1" row={5} cols={100} wrap="hard" autoComplete="on" value={this.state.report} /><h1>اقتراحات الباحث</h1><textarea value={this.state.suggestions} id="text2" row={5} cols={100} wrap="hard" /><table style={{width: '100%'}}>
                   <tbody><tr>
                     </tr>
                     <tr>
@@ -784,6 +788,7 @@ class PrintPage extends Component {
                         <input type="text" name="panelRecSixth" value={this.state.panelRecSixth} /></td>
                     </tr>
                   </tbody></table>
+                  </div>
               </form></div>
             </>
         );

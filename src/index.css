@@ -1,14 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   background-color: white;
   font-size: 14px;
   color: black;
 }
 
 body {
-
   size: 21cm 29.7cm;
   margin: 0mm 0mm 0mm 0mm;
   padding: 0;
@@ -25,10 +24,7 @@ h1 {
   padding: 0;
   /* -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out; */
-
-
 }
-
 
 h2 {
   text-align: right;
@@ -51,20 +47,12 @@ h3 {
 form {
   text-align: right;
 
-  /* background-color: rgba(244, 247, 244, 0.349); */
   background-color: white;
   width: 20cm;
 
-  border: 2px solid rgba(34, 233, 150, 0.9);
+  /* border: 2px solid rgba(34, 233, 150, 0.9); */
   padding: 5px;
   margin: 5px;
-
-
-
-
-
-  /* box-shadow: 5px 15px 15px rgba(0, 0, 0, .5); */
-
 }
 
 label {
@@ -74,8 +62,6 @@ label {
   text-align: right;
   text-indent: 1;
   margin: 5px;
-
-
 }
 
 input {
@@ -94,10 +80,9 @@ input {
     border-radius: 4px; */
   /* border-bottom: 1.5px dotted darkgrey; */
   /* box-sizing: border-box; */
-
 }
 
-input [type=checkbox] {
+input [type="checkbox"] {
   color: darkblue;
   border: white;
   width: 5%;
@@ -111,10 +96,9 @@ input [type=checkbox] {
     border-radius: 4px; */
   /* border-bottom: 1.5px dotted darkgrey; */
   /* box-sizing: border-box; */
-
 }
 
-input [type=number] {
+input [type="number"] {
   color: black;
   border: white;
 
@@ -128,7 +112,6 @@ input [type=number] {
     border-radius: 4px; */
   /* border-bottom: 1.5px dotted darkgrey; */
   /* box-sizing: border-box; */
-
 }
 
 div {
@@ -142,16 +125,12 @@ br {
   padding: 0;
   height: 0;
   line-height: 1px;
-
 }
-
 
 img {
   height: 70px;
   width: auto;
   margin: 0;
-
-
 }
 
 figure {
@@ -162,7 +141,6 @@ figure {
   font-size: smaller;
   text-indent: 0;
   margin: 0;
-
 }
 
 table {
@@ -171,24 +149,19 @@ table {
   width: 100%;
   text-align: right;
   color: black;
-
-
 }
 
 td,
 th {
-  border: 0.5px solid rgba(0, 0, 0, .3);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
   border-collapse: collapse;
   padding: 0px;
   text-align: right;
-
 }
 
 tr:nth-child(even) {
   background-color: white;
   text-align: right;
-
-
 }
 
 th {
@@ -201,7 +174,7 @@ th {
 }
 
 textarea {
-  border: 0.5px solid rgba(0, 0, 0, .3);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
   overflow: hidden;
   padding: auto;
   margin: auto;
@@ -210,7 +183,7 @@ textarea {
   resize: auto;
 }
 
-input [type=submit] {
+input [type="submit"] {
   color: blue;
   padding: 0px 0px;
   margin: 0px 0px;
@@ -223,5 +196,4 @@ input [type=submit] {
 
   box-sizing: border-box;
   background-color: aqua;
-
 }
