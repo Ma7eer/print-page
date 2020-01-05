@@ -285,12 +285,12 @@ class PrintPage extends Component {
     return (
       <>
       <div dir="rtl">
-              <header>
-                <figure>
+              <header style={{margin: "0 auto"}}>
+                <figure style={{margin: "0 auto"}}>
                   <img src={logo} alt="logo" />
                 </figure>
               </header>
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit} style={{margin: "0 auto"}}>
                 <table style={{width: '100%'}}>
                   <tbody><tr>
                       <td>
