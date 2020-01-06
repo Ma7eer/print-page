@@ -3,6 +3,21 @@ import Axios from "axios";
 import ReactToPrint from 'react-to-print';
 import logo from "./logo.png";
 
+const cellValue = () => {
+  // formio date input returns a string with date and time
+  // this function converts that to a time only string
+  // this function also checks if the string is already formatted correctly
+  // in that case we return the string in an array
+  let removeTimeRegex = /[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/
+  let formattedDate = cellValue
+    ? cellValue.match(removeTimeRegex) == null
+      ? [cellValue]
+      : cellValue.match(removeTimeRegex)
+    : ['']
+  return formattedDate[0]
+}
+
+
 class PrintPage extends Component {
   state = {
     formId:"",
@@ -735,7 +750,7 @@ class PrintPage extends Component {
                       <td width="50%"><label style={{textAlign: 'right'}}>تم التحديث بواسطة:</label>
                         <input type="text" name="updatedBy" value={this.state.updatedBy} /></td>
                       <td width="30%"><label style={{textAlign: 'right'}}>تاريخ التحديث:</label>
-                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfUpdate" value={this.state.dateOfUpdate} /></td>
+                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfUpdate" value={cellValue(this.state.dateOfUpdate)} /></td>
                     </tr><tr>
                     </tr></tbody></table>
                 <br />
