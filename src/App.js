@@ -14,6 +14,7 @@ const cellValue = (val) => {
       ? [val]
       : val.match(removeTimeRegex)
     : ['']
+    console.log(formattedDate)
   return formattedDate[0]
 }
 
@@ -750,7 +751,7 @@ class PrintPage extends Component {
                       <td width="50%"><label style={{textAlign: 'right'}}>تم التحديث بواسطة:</label>
                         <input type="text" name="updatedBy" value={this.state.updatedBy} /></td>
                       <td width="30%"><label style={{textAlign: 'right'}}>تاريخ التحديث:</label>
-                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfUpdate" value={cellValue(this.state.dateOfUpdate)} /></td>
+                        <input type="text" placeholder="yyyy-mm-dd" name="dateOfUpdate" value={this.state.dateOfUpdate} /></td>
                     </tr><tr>
                     </tr></tbody></table>
                 <br />
@@ -773,7 +774,7 @@ class PrintPage extends Component {
                       <td width="20%"><label style={{textAlign: 'right'}}>رقم الهاتف:</label>
                         <input type="text" name="fieldAgentPhone" value={this.state.fieldAgentPhone} /></td>
                       <td width="30%"><label style={{textAlign: 'right'}}>تاريخ البحث:</label>
-                        <input type="text" name="dateOfReport" value={this.state.dateOfReport} /></td>		
+                        <input type="text" name="dateOfReport" value={cellValue(this.state.dateOfReport)} /></td>		
                     </tr></tbody></table>
                 <br />
                 <h1>توصيات اللجنة</h1>
