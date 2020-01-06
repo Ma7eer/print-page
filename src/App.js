@@ -14,7 +14,6 @@ const cellValue = (val) => {
       ? [val]
       : val.match(removeTimeRegex)
     : ['']
-    console.log(formattedDate)
   return formattedDate[0]
 }
 
