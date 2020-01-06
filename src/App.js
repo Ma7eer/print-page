@@ -10,9 +10,9 @@ const cellValue = (val) => {
   // in that case we return the string in an array
   let removeTimeRegex = /[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/
   let formattedDate = val
-    ? cellValue.match(removeTimeRegex) == null
+    ? val.match(removeTimeRegex) == null
       ? [val]
-      : cellValue.match(removeTimeRegex)
+      : val.match(removeTimeRegex)
     : ['']
   return formattedDate[0]
 }
