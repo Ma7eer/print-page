@@ -315,7 +315,7 @@ class PrintPage extends Component {
                         <h1>دراسة حالة أسرة:
                           <input id="Text1" type="text" name="claimMadeBy" value={this.state.claimMadeBy} onChange={()=>null} /></h1></td>
                       <td width="15%"><label style={{textAlign: 'right'}}>غير فعال:</label>
-                        <input type="checkbox" name="isArchived" checked={this.state.isArchived} />
+                        <input type="checkbox" name="isArchived" checked={this.state.isArchived} onChange={() => null} />
                         &#160;
                       </td>
                       <td>
@@ -371,15 +371,15 @@ class PrintPage extends Component {
                 <table>
                   <tbody><tr>
                       <td width="7%"><h1>فئة الاسرة</h1></td>
-                      <td width="10%"><label style={{textAlign: 'right'}}>الايتام:</label><input type="checkbox" name="orphan" checked={this.state.orphan} />
+                      <td width="10%"><label style={{textAlign: 'right'}}>الايتام:</label><input type="checkbox" name="orphan" checked={this.state.orphan} onChange={() => null}/>
                       &#160;</td>
-                      <td width="18%"><label width="80%" style={{textAlign: 'right'}}>دخل محدود:</label><input width="20%" type="checkbox" name="limitedIncome" checked={this.state.limitedIncome} />
+                      <td width="18%"><label width="80%" style={{textAlign: 'right'}}>دخل محدود:</label><input width="20%" type="checkbox" name="limitedIncome" checked={this.state.limitedIncome} onChange={() => null} />
                         </td>
-                      <td width="22%"><label width="80%" style={{textAlign: 'right'}}>أسرة ضمانية:</label><input width="80%" type="checkbox" name="socialSecurity" checked={this.state.socialSecurity}  />
+                      <td width="22%"><label width="80%" style={{textAlign: 'right'}}>أسرة ضمانية:</label><input width="80%" type="checkbox" name="socialSecurity" checked={this.state.socialSecurity} onChange={() => null} />
                         </td>
-                      <td width="10%"><label style={{textAlign: 'right'}}>عجز:</label><input type="checkbox" name="financialIssues" checked={this.state.financialIssues} />
+                      <td width="10%"><label style={{textAlign: 'right'}}>عجز:</label><input type="checkbox" name="financialIssues" checked={this.state.financialIssues} onChange={() => null} />
                         </td>
-                      <td width="10%"><label style={{textAlign: 'right'}}>أخرى:</label><input type="checkbox" name="isOther" checked={this.state.isOther} />
+                      <td width="10%"><label style={{textAlign: 'right'}}>أخرى:</label><input type="checkbox" name="isOther" checked={this.state.isOther} onChange={() => null} />
                         </td>
                       <td width="30%"><label style={{textAlign: 'right'}}>أخرى:</label>
                         <input style={{textAlign: 'right'}} type="text" name="other" value={this.state.other} /></td>
@@ -406,25 +406,25 @@ class PrintPage extends Component {
                 <table>
                   <tbody><tr>
                       <td width="10%"><label style={{textAlign: 'right'}}>يعمل:</label>
-                        <input type="checkbox" name="husbandIsWorking" checked={this.state.husbandIsWorking} />
+                        <input type="checkbox" name="husbandIsWorking" checked={this.state.husbandIsWorking} onChange={() => null} />
                         &#160;</td>
                       <td width="12%"><label style={{textAlign: 'right'}}>متقاعد:</label>
-                        <input type="checkbox" name="husbandIsRetired" checked={this.state.husbandIsRetired} />
+                        <input type="checkbox" name="husbandIsRetired" checked={this.state.husbandIsRetired} onChange={() => null} />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>عاطل:</label>
-                        <input type="checkbox" name="husbandIsUnemployed" checked={this.state.husbandIsUnemployed} />
+                        <input type="checkbox" name="husbandIsUnemployed" checked={this.state.husbandIsUnemployed} onChange={() => null} />
                         </td>
                       <td width="14%"><label style={{textAlign: 'right'}}>مسجون:</label>
-                        <input type="checkbox" name="husbandIsIncarcerated" checked={this.state.husbandIsIncarcerated} />
+                        <input type="checkbox" name="husbandIsIncarcerated" checked={this.state.husbandIsIncarcerated} onChange={() => null} />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>عاجز:</label>
-                        <input type="checkbox" name="husbandIsDisabled" checked={this.state.husbandIsDisabled} />
+                        <input type="checkbox" name="husbandIsDisabled" checked={this.state.husbandIsDisabled} onChange={() => null} />
                         </td>
                       <td width="12%"><label style={{textAlign: 'right'}}>مريض:</label>
-                        <input type="checkbox" name="husbandIsSick" checked={this.state.husbandIsSick} />
+                        <input type="checkbox" name="husbandIsSick" checked={this.state.husbandIsSick} onChange={() => null} />
                         </td>
                       <td width="12%"><label style={{textAlign: 'right'}}>متوفى:</label>
-                        <input type="checkbox" name="husbandIsDeceased" checked={this.state.husbandIsDeceased} />
+                        <input type="checkbox" name="husbandIsDeceased" checked={this.state.husbandIsDeceased} onChange={() => null} />
                         </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>أخرى:</label>
                         <input type="text" name="OtherHusbandStatus" value={this.state.OtherHusbandStatus} /></td>
@@ -472,28 +472,28 @@ class PrintPage extends Component {
                 <table>
                   <tbody><tr>
                       <td width="14%"><label style={{textAlign: 'right'}}>ربة منزل:</label>
-                        <input type="checkbox" name="isHouseWife" checked={this.state.isHouseWife}  />
+                        <input type="checkbox" name="isHouseWife" checked={this.state.isHouseWife} onChange={() => null}  />
                         &#160;</td>
                       <td width="14%"><label style={{textAlign: 'right'}}>متقاعدة:</label>
-                        <input type="checkbox" name="wifeIsRetired" checked={this.state.wifeIsRetired}  />
+                        <input type="checkbox" name="wifeIsRetired" checked={this.state.wifeIsRetired} onChange={() => null} />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>ارملة:</label>
-                        <input type="checkbox" name="wifeIsWidow" checked={this.state.wifeIsWidow}  />
+                        <input type="checkbox" name="wifeIsWidow" checked={this.state.wifeIsWidow} onChange={() => null}  />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>هجر:</label>
-                        <input type="checkbox" name="wifeIsAbandoned" checked={this.state.wifeIsAbandoned} />
+                        <input type="checkbox" name="wifeIsAbandoned" checked={this.state.wifeIsAbandoned} onChange={() => null} />
                         </td>
                       <td width="9%"><label style={{textAlign: 'right'}}>عجز:</label>
-                        <input type="checkbox" name="wifeIsDisabled" checked={this.state.wifeIsDisabled} />
+                        <input type="checkbox" name="wifeIsDisabled" checked={this.state.wifeIsDisabled} onChange={() => null} />
                         </td>
                       <td width="13%"><label style={{textAlign: 'right'}}>مريضة:</label>
-                        <input type="checkbox" name="wifeIsSick" checked={this.state.wifeIsSick} />
+                        <input type="checkbox" name="wifeIsSick" checked={this.state.wifeIsSick} onChange={() => null} />
                         </td>
                       <td width="13%"><label style={{textAlign: 'right'}}>متوفاة:</label>
-                        <input type="checkbox" name="wifeIsDeceased" checked={this.state.wifeIsDeceased} />
+                        <input type="checkbox" name="wifeIsDeceased" checked={this.state.wifeIsDeceased} onChange={() => null} />
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>مطلقة:</label>
-                        <input type="checkbox" name="wifeIsDivorced" checked={this.state.wifeIsDivorced} />
+                        <input type="checkbox" name="wifeIsDivorced" checked={this.state.wifeIsDivorced} onChange={() => null} />
                         </td>
                     </tr>
                   </tbody></table>	
@@ -518,7 +518,7 @@ class PrintPage extends Component {
                       <td width="0%"><label style={{textAlign: 'right'}}>رقم حساب الزوجة في بنك مسقط فقط:</label>
                         <input type="text" name="wifeBankNumber" value={this.state.wifeBankNumber} /></td>
                       <td width="50%"><label style={{textAlign: 'right'}}>هل ترغب الزوجة ان تكون من الاسر المنتجة لمساعدة اسرتها:</label>
-                        <input type="checkbox" name="isProductiveFamily" checked={this.state.isProductiveFamily} />
+                        <input type="checkbox" name="isProductiveFamily" checked={this.state.isProductiveFamily} onChange={() => null} />
                         </td>
                       <td width="0%"><label style={{textAlign: 'right'}}>نوع المهنة:</label>
                         <input type="text" name="typeOfProductiveFamily" value={this.state.typeOfProductiveFamily} /></td>
@@ -620,19 +620,19 @@ class PrintPage extends Component {
                         <h1 style={{backgroundColor: '#ccffcc'}}>نوع السكن</h1>
                       </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>منزل طابق واحد:</label>
-                        <input type="checkbox" name="oneStoryHouse" checked={this.state.oneStoryHouse} />
+                        <input type="checkbox" name="oneStoryHouse" checked={this.state.oneStoryHouse}  onChange={() => null}/>
                         </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>منزل طابقين:</label>
-                        <input type="checkbox" name="twoStoryHouse" checked={this.state.twoStoryHouse} />
+                        <input type="checkbox" name="twoStoryHouse" checked={this.state.twoStoryHouse}  onChange={() => null}/>
                         </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>شقة:</label>
-                        <input type="checkbox" name="apartment" checked={this.state.apartment} />
+                        <input type="checkbox" name="apartment" checked={this.state.apartment} onChange={() => null} />
                         </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>ملحق:</label>
-                        <input type="checkbox" name="addition" checked={this.state.addition} />
+                        <input type="checkbox" name="addition" checked={this.state.addition} onChange={() => null} />
                         </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>نوع اخر:</label>
-                        <input type="text" name="otherAccommodation" checked={this.state.otherAccommodation} /></td>
+                        <input type="text" name="otherAccommodation" checked={this.state.otherAccommodation} onChange={() => null} /></td>
                     </tr>
                   </tbody></table>	
                 <table style={{width: '100%'}}>
@@ -641,30 +641,30 @@ class PrintPage extends Component {
                         <h1 style={{backgroundColor: '#ccffcc'}}>نوع حيازة المسكن</h1>
                       </td>
                       <td width="5%"><label style={{textAlign: 'right'}}>ملك:</label>
-                        <input type="checkbox" name="owned" checked={this.state.owned} />
+                        <input type="checkbox" name="owned" checked={this.state.owned} onChange={() => null} />
                         </td>
                       <td width="5%"><label style={{textAlign: 'right'}}>ورث:</label>
-                        <input type="checkbox" name="inherited" checked={this.state.inherited} />
+                        <input type="checkbox" name="inherited" checked={this.state.inherited}  onChange={() => null}/>
                         </td>
                       <td width="10%"><label style={{textAlign: 'right'}}>مشترك:</label>
-                        <input type="checkbox" name="combined" checked={this.state.combined} />
+                        <input type="checkbox" name="combined" checked={this.state.combined} onChange={() => null} />
                         </td>
                       <td width="5%"><label style={{textAlign: 'right'}}>ايجار:</label>
-                        <input type="checkbox" name="rent" checked={this.state.rent} />
+                        <input type="checkbox" name="rent" checked={this.state.rent} onChange={() => null} />
                         </td>
                       <td width="15%"><label style={{textAlign: 'right'}}>(الايجار الشهري):</label>
-                        <input type="number" name="rentAmount" value={this.state.rentAmount} /></td>
+                        <input type="number" name="rentAmount" value={this.state.rentAmount} onChange={() => null} /></td>
                       <td width="25%"><label style={{textAlign: 'right'}}>المتأخر من  ايجار المنزل:</label>
-                        <input type="number" name="lateRentAmount" value={this.state.lateRentAmount} /></td>
+                        <input type="number" name="lateRentAmount" value={this.state.lateRentAmount} onChange={() => null} /></td>
                     </tr>
                   </tbody></table>
                 <table>
                   <tbody><tr>
                       <td width="15%"><h1>المبالغ المتأخرة</h1></td>
                       <td width="15%"><label style={{textAlign: 'right'}}>مبلغ فاتورة الكهرباء:</label>
-                        <input type="number" name="lateElectricalAmount" value={this.state.lateElectricalAmount} /></td>
+                        <input type="number" name="lateElectricalAmount" value={this.state.lateElectricalAmount} onChange={() => null} /></td>
                       <td width="15%">	<label style={{textAlign: 'right'}}>مبلغ فاتورة الماء:</label>
-                        <input type="number" name="lateWaterAmount" value={this.state.lateWaterAmount} /></td>
+                        <input type="number" name="lateWaterAmount" value={this.state.lateWaterAmount} onChange={() => null} /></td>
                     </tr>
                   </tbody></table>	
                 <table style={{width: '100%'}}>
@@ -757,7 +757,7 @@ class PrintPage extends Component {
                 </div >
 
                 <div className="container" style={{border: "2px solid rgba(34, 233, 150, 0.9)", padding: "5px", paddingTop: "10px"}}>
-                <h1 >تقرير الباحث الاجتماعي عن حالة الاسرة</h1><textarea name="Social_research_details" id="text1" row={5} cols={100} wrap="hard" autoComplete="on" value={this.state.report} /><h1>اقتراحات الباحث</h1><textarea value={this.state.suggestions} id="text2" row={5} cols={100} wrap="hard" /><table style={{width: '100%'}}>
+                <h1 >تقرير الباحث الاجتماعي عن حالة الاسرة</h1><textarea name="Social_research_details" id="text1" row={5} cols={100} wrap="hard" autoComplete="on" value={this.state.report} style={{height: "25em"}} /><h1>اقتراحات الباحث</h1><textarea value={this.state.suggestions} style={{height: "25em"}} id="text2" row={5} cols={100} wrap="hard" /><table style={{width: '100%'}}>
                   <tbody><tr>
                     </tr>
                     <tr>
@@ -780,27 +780,27 @@ class PrintPage extends Component {
                 <br /><table style={{width: '100%'}}>
                   <tbody><tr>
                       <td width="100%"><label>1</label>
-                        <input type="text" name="panelRecFirst" value={this.state.panelRecFirst} /></td>
+                        <input type="text" name="panelRecFirst" value={this.state.panelRecFirst} style={{height: "2em"}} /></td>
                     </tr>
                     <tr>
                       <td width="100%"><label>2</label>
-                        <input type="text" name="panelRecSecond" value={this.state.panelRecSecond} /></td>
+                        <input type="text" name="panelRecSecond" value={this.state.panelRecSecond} style={{height: "2em"}} /></td>
                     </tr>
                     <tr>
                       <td width="100%"><label>3</label>
-                        <input type="text" name="panelRecThird" value={this.state.panelRecThird} /></td>
+                        <input type="text" name="panelRecThird" value={this.state.panelRecThird} style={{height: "2em"}} /></td>
                     </tr>
                     <tr>
                       <td width="100%"><label>4</label>
-                        <input type="text" name="panelRecFourth" value={this.state.panelRecFourth} /></td>
+                        <input type="text" name="panelRecFourth" value={this.state.panelRecFourth} style={{height: "2em"}} /></td>
                     </tr>
                     <tr>
                       <td width="100%"><label>5</label>
-                        <input type="text" name="panelRecFifth" value={this.state.panelRecFifth} /></td>
+                        <input type="text" name="panelRecFifth" value={this.state.panelRecFifth} style={{height: "2em"}} /></td>
                     </tr>
                     <tr>
                       <td width="100%"><label>6</label>
-                        <input type="text" name="panelRecSixth" value={this.state.panelRecSixth} /></td>
+                        <input type="text" name="panelRecSixth" value={this.state.panelRecSixth} style={{height: "2em"}} /></td>
                     </tr>
                   </tbody></table>
                   </div>
