@@ -159,7 +159,7 @@ class PrintPage extends Component {
     e.preventDefault();
     // console.log(this.state.formId);
     await Axios.get(
-      `https://dashboard.alrahma-baraka.com:5001/family/print/${this.state.formId}`,
+      `https://dashboard.alrahma-baraka.com/api/family/print/${this.state.formId}`,
       {
         headers: { Authorization: "Bearer" + localStorage.getItem("jwtToken") }
       }
