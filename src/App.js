@@ -311,7 +311,7 @@ class PrintPage extends Component {
       )
       .catch(err => console.log(err));
     Axios.get(
-      `https://dashboard.alrahma-baraka.com:5001/visitReports/print/${this.state.formId}`,
+      `https://dashboard.alrahma-baraka.com/api/visitReports/print/${this.state.formId}`,
       {
         headers: { Authorization: "Bearer" + localStorage.getItem("jwtToken") }
       }
